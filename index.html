@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">📁 Smart Filter Gallery</h1>
+
+  <div class="controls">
+    <button onclick="filterImages('all')">Show All</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+
+    <div class="card nature">
+      <span class="tag">Nature</span>
+      <img src="https://picsum.photos/id/1011/600/400" onclick="filterImages('nature')">
+    </div>
+    <div class="card nature">
+      <span class="tag">Nature</span>
+      <img src="https://picsum.photos/id/1025/600/400">
+    </div>
+
+    <div class="card city">
+      <span class="tag">City</span>
+      <img src="https://picsum.photos/id/1012/600/400" onclick="filterImages('city')">
+    </div>
+    <div class="card city">
+      <span class="tag">City</span>
+      <img src="https://picsum.photos/id/1019/600/400">
+    </div>
+
+    <div class="card abstract">
+      <span class="tag">Abstract</span>
+      <img src="https://picsum.photos/id/1015/600/400" onclick="filterImages('abstract')">
+    </div>
+    <div class="card abstract">
+      <span class="tag">Abstract</span>
+      <img src="https://picsum.photos/id/1020/600/400">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
